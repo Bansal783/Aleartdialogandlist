@@ -67,10 +67,11 @@ class MainActivity : AppCompatActivity() {
                                     }
                                     Toast.makeText(
                                         this,
-                                        "select $position $isChecked",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
+                                        "select $position $isChecked", Toast.LENGTH_SHORT).show()
 
+                                }
+                                .setPositiveButton("ok"){_,_->
+                                    Toast.makeText(this,"click okay",Toast.LENGTH_SHORT).show()
                                 }
                                 .show()
 
